@@ -1,10 +1,4 @@
-
-st.set_page_config(
-    page_title="AI Job Search Assistant with Chatbot",
-    page_icon="🤖",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+import streamlit as st
 import requests
 import json
 import datetime
@@ -19,6 +13,15 @@ import nltk
 from textblob import TextBlob
 import random
 from collections import defaultdict
+
+# Now it's safe to configure Streamlit
+st.set_page_config(
+    page_title="AI Job Search Assistant with Chatbot",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 
 # Step 3: Download NLTK data for natural language processing
 try:
