@@ -1,4 +1,10 @@
 
+st.set_page_config(
+    page_title="AI Job Search Assistant with Chatbot",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 import requests
 import json
 import datetime
